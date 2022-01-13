@@ -1,0 +1,35 @@
+.album {
+  display: flex;
+  flex-wrap: wrap;
+}
+.frame {
+  position: relative;
+  width: 400px;
+  margin: 10px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.image img {
+  width: 100%;
+}
+h2,
+p {
+  padding: 0px 20px;
+  text-align: justify;
+}
+h2 {
+  text-align: center;
+}
+
+p {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  display: none;
+  background-color: rgba(255, 235, 205, 0.363);
+}
+
+.frame:hover p {
+  display: block;
+}
